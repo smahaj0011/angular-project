@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="img"
+        src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/06/931/524/TESLA-LOGO.jpg?ve=1&tl=1g"
+        alt="logo"
+      />
+
+      <!-- <form [formGroup]="data" (ngSubmit)="onSubmit(data)">
+        <input type="text" name="email" formControlName="email" />
+        <input type="text" name="password" formControlName="password" />
+        <input type="submit" value="Submit" />
+      </form> -->
+
+      <div class="card" style="width: 100%; margin-top: 30px">
+        <form [formGroup]="data" (ngSubmit)="onSubmit(data)">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default"
+                  >Email</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Default"
+                aria-describedby="inputGroup-sizing-default"
+                name="email"
+                formControlName="email"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default"
+                  >Password</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Default"
+                aria-describedby="inputGroup-sizing-default"
+                name="password"
+                formControlName="password"
+              />
+            </div>
+            <button class="btn btn-primary" type="submit">Sign in</button>
+
+     
+
+            <!-- <div class="text-center" *ngIf="invalidCredentials">Invalid Credentials</div> -->
+
+          </div>
+        </form>
+      </div>
+
+
+      <div *ngIf="invalidCredentials" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Invalid Credentials.</strong> Email or Password entered is invalid. Please try again.
+        <button type="button" (click)="close()" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+  
+
+
+  </body>
+</html>

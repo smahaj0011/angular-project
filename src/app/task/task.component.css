@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.task {
+    margin-left: 50vh;
+}
+
+.progress {
+    margin: 30px;
+    width: 50vh;
+}
+
+.btn {
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  align-items: center;
+}
+
+
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

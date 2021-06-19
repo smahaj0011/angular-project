@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3185d;
+  justify-content: center;
+  height: 100vh;
+  width: max-content;
+  border: 3px solid black;
+}
+
+.btn {
+  width: max-content;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+}
+
+main {
+  display: flex;
+}

@@ -1,0 +1,29 @@
+<div class="main">
+    <app-dashboard></app-dashboard>
+
+    <div class="second">
+      <h4>Users List</h4>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Role</th>
+          </tr>
+        </thead>
+        <tbody class="body">
+          <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.mobile}}</td>
+            <td>{{user.role}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+</div>
+

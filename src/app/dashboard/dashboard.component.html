@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h1 class="text-center">Navigation</h1>
+        <br />
+        <div class="list-group">
+          <button class="btn" (click)="dashboard()">
+            <a class="list-group-item list-group-item-action active">
+              <p class="mb-1">Dashboard</p>
+            </a>
+          </button>
+          <button class="btn" (click)="contactManagment()">
+            <a class="list-group-item list-group-item-action active">
+              <p class="mb-1">Contact List Managment</p>
+            </a>
+          </button>
+          <button class="btn" (click)="userManagment()">
+            <a class="list-group-item list-group-item-action active">
+              <p class="mb-1">User List Managment</p>
+            </a>
+          </button>
+          <button class="btn" (click)="logout()">
+            <a class="list-group-item list-group-item-action active">
+              <p class="mb-1">Log Out</p>
+            </a>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- <h1 class="text-center">Welcome to our organization</h1> -->
+  </body>
+</html>
